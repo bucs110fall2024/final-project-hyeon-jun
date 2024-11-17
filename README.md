@@ -6,13 +6,13 @@
 
 ## Team Members
 
-<< List team member names >>
+Hyeon-Jun Cha
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+Recreating the classic game of Pong. Player who scores to 10 points first will win the game. Will also be adding aesthically appealing factors to entertain the players.
 
 ***    
 
