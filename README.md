@@ -30,11 +30,11 @@ Recreating the classic game of Pong. Player who scores to 10 points first will w
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Have a start menu
+2. Page showing how to play/win the game
+3. Ask which side to play on
+4. What color ball to choose
+5. What color block to move
 
 ### Classes
 
