@@ -1,10 +1,7 @@
+# Pacman Game
+## CS110 Final Project Fall, 2024
 
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
-
-CS110 Final Project Fall, 2024
 ## Team Members
 
 Hyeon-Jun Cha
@@ -13,9 +10,9 @@ Hyeon-Jun Cha
 
 ## Project Description
 
-Platformer Game
+A Pacman-inspired game where the player collects pellets, avoids ghosts, and navigates through a maze.
 
-***    
+***
 
 ## GUI Design
 
@@ -31,27 +28,30 @@ Platformer Game
 
 ### Features
 
-1. Player movement: left, right, and jumping.
-2. Basic platform collision detection.
-3. Modular codebase following the MVC design pattern.
-4. Gravity simulation for realistic jumps.
-5. Multiple levels with progressively harder platform layouts.
+1. Player movement: up, down, left, and right.
+2. Pellet collection for scoring.
+3. Ghosts with basic AI movement that cause a game-over upon collision.
+4. Static maze layout with walls and paths.
+5. Victory condition: collect all pellets.
+6. Game-over condition: collision with a ghost.
 
 ### Classes
 
-- **Player**: Handles the player's movement, jumping, gravity, and collision detection.
-- **Platform**: Represents static platforms the player can stand on.
+- **Player**: Handles the player's movement, collision with walls, and pellet collection.
+- **Ghost**: Represents enemies with simple AI movement.
+- **Wall**: Represents the maze's static walls that block movement.
+- **Pellet**: Collectible objects that contribute to the score.
 - **Controller**: Manages the game loop, input handling, and overall game logic.
-- **View**: Handles the rendering of all visual elements, including the background, player, and platforms.
-- **Settings**: Stores global constants and configuration values for easy adjustments.
+- **View**: Handles the rendering of all visual elements, including the maze, player, ghosts, and pellets.
+- **Settings**: Stores global constants such as screen dimensions, colors, and tile size.
 
 ## ATP
 
-|| Step                 | Procedure            | Expected Results                   |
-|----------------------|:--------------------:|-----------------------------------:|
-| 1                    | Run the Platformer Game program | The GUI window appears, showing the player and platforms |
-| 2                    | Move left or right using arrow keys | The player moves left or right accordingly |
-| 3                    | Press the spacebar to jump | The player jumps upwards and lands back on a platform |
-| 4                    | Move the player off the edge of the platform | The player falls due to gravity |
-| 5                    | Collision with platform | The player stops falling and stands on the platform |
-| 6                    | Close the game window | The game closes without errors |
+| Step | Procedure                          | Expected Results                                     |
+|------|------------------------------------|-----------------------------------------------------|
+| 1    | Run the Pacman Game program        | The GUI window appears, showing the maze, player, pellets, and ghosts. |
+| 2    | Move the player using arrow keys   | The player moves in the selected direction.         |
+| 3    | Collide with a pellet              | The pellet disappears, and the score increases.     |
+| 4    | Collide with a ghost               | The game ends with a "Game Over" message.           |
+| 5    | Collect all pellets                | The game ends with a "You Win!" message.            |
+| 6    | Close the game window              | The game closes without errors.                    |
