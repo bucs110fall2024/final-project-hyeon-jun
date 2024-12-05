@@ -30,9 +30,9 @@ A Pacman-inspired game where the player collects pellets, avoids ghosts, and nav
 
 1. Player movement: up, down, left, and right.
 2. Pellet collection for scoring.
-3. Ghosts with basic AI movement that cause a game-over upon collision.
-4. Static maze layout with walls and paths.
-5. Victory condition: collect all pellets.
+3. Static maze layout with walls and paths.
+4. Victory condition: collect all pellets.
+5. Ghosts with basic AI movement that cause a game-over upon collision.
 6. Game-over condition: collision with a ghost.
 
 ### Classes
