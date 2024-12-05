@@ -52,6 +52,6 @@ A Pacman-inspired game where the player collects pellets, avoids ghosts, and nav
 | 1    | Run the Pacman Game program        | The GUI window appears, showing the maze, player, pellets, and ghosts. |
 | 2    | Move the player using arrow keys   | The player moves in the selected direction.         |
 | 3    | Collide with a pellet              | The pellet disappears, and the score increases.     |
-| 4    | Collide with a ghost               | The game ends with a "Game Over" message.           |
+| 4    | Close the game window               | The game closes without errors.           |
 | 5    | Collect all pellets                | The game ends with a "You Win!" message.            |
-| 6    | Close the game window              | The game closes without errors.                    |
+| 6    | Collide with the ghosts             | The game ends with a "Game Over"                    |

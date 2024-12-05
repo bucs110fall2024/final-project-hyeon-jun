@@ -23,11 +23,11 @@ class Player(pygame.sprite.Sprite):
 class Ghost(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
-        self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
-        self.image.fill(RED)
+        self.image = pygame.Surface((32, 32))
+        self.image.fill((255, 0, 0))
         self.rect = self.image.get_rect(topleft=(x, y))
         self.speed = 2
-        self.direction = pygame.Vector2(random.choice([-1, 1]), random.choice([-1, 1]))
+        self.direction = pygame.Vector2(1, 0)
 
     def update(self, walls):
         self.rect.x += self.direction.x * self.speed
