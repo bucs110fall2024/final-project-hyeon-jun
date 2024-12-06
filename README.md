@@ -10,7 +10,7 @@ Hyeon-Jun Cha
 
 ## Project Description
 
-A Pacman-inspired game where the player collects pellets, avoids ghosts, and navigates through a maze.
+A Pacman-inspired game where the player collects pellets and navigates through a maze.
 
 ***
 
@@ -32,13 +32,11 @@ A Pacman-inspired game where the player collects pellets, avoids ghosts, and nav
 2. Pellet collection for scoring.
 3. Static maze layout with walls and paths.
 4. Victory condition: collect all pellets.
-5. Ghosts with basic AI movement that cause a game-over upon collision.
-6. Game-over condition: collision with a ghost.
+5. Collisions with the walls of the maze.
 
 ### Classes
 
 - **Player**: Handles the player's movement, collision with walls, and pellet collection.
-- **Ghost**: Represents enemies with simple AI movement.
 - **Wall**: Represents the maze's static walls that block movement.
 - **Pellet**: Collectible objects that contribute to the score.
 - **Controller**: Manages the game loop, input handling, and overall game logic.
@@ -54,4 +52,3 @@ A Pacman-inspired game where the player collects pellets, avoids ghosts, and nav
 | 3    | Collide with a pellet              | The pellet disappears, and the score increases.     |
 | 4    | Close the game window               | The game closes without errors.           |
 | 5    | Collect all pellets                | The game ends with a "You Win!" message.            |
-| 6    | Collide with the ghosts             | The game ends with a "Game Over"                    |
